@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/e9be96833e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link rel="icon" href="assets/img/ferwle.png" type="image/x-icon"/><meta name="theme-color" content="#5E92B3"/>
+        <title>Sayfa bulunamadı.</title>
+        <meta name="description" content="Frewle'nin Selamı var!">
+        <meta property="og:locale" content="tr_TR">
+        <meta property="og:site_name" content="Ferwle">
+    </head>
+    <body class="dark">
+        <header class="l-header">
+            <frw class="frw bd-grid">
+                <a href="#" class="frw__logo">
+                    <img src="assets/img/ferwle.png" alt="ferwle Resmi" style="float: left; max-width: 40px; height: auto; margin-right: 10px;">
+                          
+                    Ferwle
+                </a>
+                <div class="frw__menu" id="frw-menu">
+                    <ul class="frw__list">
+                        <li class="frw__item">
+                            <img src="assets/img/home.png" alt="Ticket Resmi" style="float: left; max-width: 25px; height: auto; margin-right: 10px;">
+                                
+                            <a href="www.ferwle.com.tr" class="frw__link active">Ana Sayfa</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="frw__toggle" id="frw-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </frw>
+        </header>
+        <main class="l-main">
+            <section class="home bd-grid" id="anamenü">
+                <div class="home__data">
+                    <center>
+                        <h1 class="home__title">
+                            Aradığın <span class="home__title-color">Sayfa</span>
+                            <br>Burda değil.
+                        </h1>
+                        <img src="assets/img/404.png" alt="ferwle Resmi" style="max-width: 400px; height: auto; ">
+                    </center>
+                    
+                </div>  
+            </section>
+            <script src="https://unpkg.com/scrollreveal"></script>
+            <script src="assets/js/main.js"></script>
+    </body>
+</html>

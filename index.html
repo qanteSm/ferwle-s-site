@@ -1,0 +1,153 @@
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="google-site-verification" content="AapgQW64bfoC2dbZkNxs7PnX01jKoRH_UAL39yRXSg4"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/e9be96833e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link rel="icon" href="assets/img/ferwle.png" type="image/x-icon"/>
+        <meta name="theme-color" content="#5E92B3"/>
+        <title>Welcome to Ferwle's site</title>
+        <meta name="description" content="Frewle'nin Selamı var!">
+        <meta property="og:locale" content="tr_TR">
+        <meta property="og:site_name" content="Ferwle">
+
+        <script>
+            window.addEventListener('load', fg_load)
+        
+            function fg_load() {
+                document.getElementById('loading').style.display = 'none'
+            }
+        </script>
+        <script>
+            // Ekran genişliği değiştiğinde kontrol edilecek fonksiyon
+            function checkScreenWidth() {
+              var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+              var imageElement = document.getElementById('responsiveImage');
+                
+              if (screenWidth < 564) {
+                imageElement.style.display = 'none';
+              } else {
+                imageElement.style.display = 'block';
+              }
+            }
+        
+            window.onload = checkScreenWidth;
+            window.onresize = checkScreenWidth;
+          </script>
+    </head>
+    <body class="dark">
+        <div id="loading">
+            <img src="assets/img/loader.gif" alt="Yükleniyor..." style="width:  5%; height: auto;" />
+        </div>
+        <header class="l-header">
+            <frw class="frw bd-grid">
+                <div>
+                    <a href="#" class="frw__logo">
+                        <img src="assets/img/ferwle.png" alt="ferwle Resmi" style="float: left; max-width: 40px; height: auto; margin-right: 10px;">
+                              
+                        Ferwle
+                    </a>
+                    
+                </div>
+                <div class="frw__menu" id="frw-menu">
+                    <ul class="frw__list">
+                        <li class="frw__item">
+                            <img src="assets/img/home.png" alt="Ticket Resmi" style="float: left; max-width: 25px; height: auto; margin-right: 10px;">
+                                
+                            <a href="#anamenü" class="frw__link active">Ana Sayfa</a>
+                        </li>
+                        <li class="frw__item">
+                            <img src="assets/img/info.png" alt="Ticket Resmi" style="float: left; max-width: 25px; height: auto; margin-right: 10px;">
+                                
+                            <a href="#hakkımda" class="frw__link">Hakkımda</a>
+                        </li>
+                        <li class="frw__item">
+                            <img src="assets/img/projects2.png" alt="Ticket Resmi" style="float: left; max-width: 25px; height: auto; margin-right: 10px;">
+                                
+                            <a href="#projelerim" class="frw__link">Projelerim</a>
+                        </li>
+                        <li class="frw__item">
+                            
+                                <img src="assets/img/r-t-ticket.png" alt="Ticket Resmi" style="float: left; max-width: 25px; height: auto; margin-right: 10px;">
+                                <a href="https://discord.gg/vD2ZdSU6dG" target="_blank" class="frw__link">R-T Ticket</a>
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div class="frw__toggle" id="frw-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </frw>
+        </header>
+        <main class="l-main">
+            <section class="home bd-grid" id="anamenü">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        <span class="home__title-color">@Frewle</span>'nin <br> Selamı var!
+                        <br>Software Developer
+                    </h1>
+                    <div class="home__social">
+                        <a href="https://discord.com/users/971309368467419168" target="_blank" class="home__social-icon">
+                            <i class='bx bxl-discord'></i>
+                        </a>
+                        
+                        <a class="home__img" target="_blank" href="https://discord.com/users/971309368467419168">
+                            <img src="https://lanyard-profile-readme.vercel.app/api/971309368467419168?bg=transparentd&borderRadius=8px&hideDiscrim=true" alt="ferwle" id="responsiveImage"/>
+                        </a>
+            </section>
+            <section class="about section " id="hakkımda">
+                <h2 class="section-title">Hakkımda</h2>
+                <div class="about__container bd-grid">
+                    <a class="about__img" target="_blank" href="https://discord.com/users/971309368467419168">
+                        <img src="https://cdn.discordapp.com/avatars/971309368467419168/e8d3d014a057396c1446766bbd043a25.png?size=1024" alt="Ferwle"/>
+                    </a>
+                    <div>
+                        <h2 class="about__subtitle">
+                            <span class="home__title-color">Merhaba Ben Ferwle</span>
+                        </h2>
+                        <p class="about__text">Web uygulamalar ve web siteler geliştiren bir geliştiriciyim! Tutkulu bir şekilde bu alanda çalışıyor ve yenilikçi ve etkileyici projeler oluşturmak için çaba sarf ediyorum. Kodlama becerilerimde uzmanlaşmış durumdayım ve çoğu kütüphaneleri kullanarak özelleştirilmiş uygulamalar oluşturuyorum. Ayrıca API'leri kullanarak çok farklı deneyimler sunmak gibi yeteneklere sahibim! Proje geliştirirken kullanıcı odaklı bir yaklaşım benimsiyorum ve kullanıcıların ihtiyaçlarını ve geri bildirimlerini dikkate alarak projelerimi geliştiriyorum. Aynı zamanda temiz, düzenli ve okunabilir kod yazmaya özen gösteriyorum! Yaratıcı ve yenilikçi fikirler üretmeyi seviyorum ve Discord topluluğunda yeni özellikler ve işlevler sunarak kullanıcıların deneyimini geliştirmek için çalışıyorum!</p>
+            </section>
+            <section class="about section" id="projelerim">
+                <h2 class="section-title">Projelerim</h2>
+                <div class="about__container bd-grid">
+                    <a class="about__img" target="_blank" href="https://discord.gg/vD2ZdSU6dG">
+                        <img src="assets/img/r-t-ticket.png" alt="Ferwle" />
+                    </a>
+                    <div>
+                        <h2 class="about__subtitle">
+                            <span class="home__title-color">R-T Ticket</span>
+                        </h2>
+                        <p class="about__text">Public ticket botu olması hedeflenen bir proje, html transcript gibi bir çok özelliği bulunan özelleştirilebilir bir bot olacaktır.</p>
+                        
+                        <h2 class="about__subtitlea">
+                            <span class="home__title-color">Yazılım Kısmı</span>
+                        </h2>
+                        <div class="meter orange nostripes" style="margin-top: -5px;">
+                            <span style="width: 50%"></span>
+                        </div>
+            
+                        <h2 class="about__subtitlea">
+                            <span class="home__title-color">Tasarım Kısmı</span>
+                        </h2>
+                        <div class="meter orange nostripes" style="margin-top: -5px;">
+                            <span style="width: 80%"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <footer class="footer">
+                <p class="footer__title">Ferwle - RT Ticket Owner</p>
+                
+            </footer>
+            <script src="https://unpkg.com/scrollreveal"></script>
+            <script src="assets/js/main.js"></script>
+    </body>
+</html>
