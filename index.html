@@ -18,13 +18,6 @@
         <meta property="og:site_name" content="Ferwle">
 
         <script>
-            window.addEventListener('load', fg_load)
-        
-            function fg_load() {
-                document.getElementById('loading').style.display = 'none'
-            }
-        </script>
-        <script>
             // Ekran genişliği değiştiğinde kontrol edilecek fonksiyon
             function checkScreenWidth() {
               var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -42,48 +35,38 @@
           </script>
     </head>
     <body class="dark">
-        <div id="loading">
-            <img src="assets/img/loader.gif" alt="Yükleniyor..." style="width:  5%; height: auto;" />
-        </div>
         <header class="l-header">
-            <frw class="frw bd-grid">
+            <nav class="frw bd-grid">
                 <div>
                     <a href="#" class="frw__logo">
-                        <img src="assets/img/ferwle.png" alt="ferwle Resmi" style="float: left; max-width: 40px; height: auto; margin-right: 10px;">
-                              
+                        <img src="assets/img/ferwle.png" alt="Ferwle Logo">
                         Ferwle
                     </a>
-                    
                 </div>
                 <div class="frw__menu" id="frw-menu">
                     <ul class="frw__list">
                         <li class="frw__item">
-                            <img src="assets/img/home.png" alt="Ticket Resmi" style="float: left; max-width: 25px; height: auto; margin-right: 10px;">
-                                
+                            <img src="assets/img/home.png" alt="Ana Sayfa İkonu">
                             <a href="#anamenü" class="frw__link active">Ana Sayfa</a>
                         </li>
                         <li class="frw__item">
-                            <img src="assets/img/info.png" alt="Ticket Resmi" style="float: left; max-width: 25px; height: auto; margin-right: 10px;">
-                                
+                            <img src="assets/img/info.png" alt="Hakkımda İkonu">
                             <a href="#hakkımda" class="frw__link">Hakkımda</a>
                         </li>
                         <li class="frw__item">
-                            <img src="assets/img/projects2.png" alt="Ticket Resmi" style="float: left; max-width: 25px; height: auto; margin-right: 10px;">
-                                 
+                            <img src="assets/img/projects2.png" alt="Projeler İkonu">
                             <a href="#projelerim" class="frw__link">Projelerim</a>
                         </li>
                         <li class="frw__item">
-                            
-                                <img src="assets/img/r-t-ticket.png" alt="Ticket Resmi" style="float: left; max-width: 25px; height: auto; margin-right: 10px;">
-                                <a href="https://alibuyuk.net/rt-index.html" target="_blank" class="frw__link">R-T Ticket</a>
-                            
+                            <img src="assets/img/r-t-ticket.png" alt="R-T Ticket İkonu">
+                            <a href="https://alibuyuk.net/rt-index.html" target="_blank" class="frw__link">R-T Ticket</a>
                         </li>
                     </ul>
                 </div>
                 <div class="frw__toggle" id="frw-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
-            </frw>
+            </nav>
         </header>
         <main class="l-main">
             <section class="home bd-grid" id="anamenü">
@@ -125,17 +108,17 @@
                         </h2>
                         <p class="about__text">Public ticket botu olması hedeflenen bir proje, html transcript gibi bir çok özelliği bulunan özelleştirilebilir bir bot olacaktır.</p>
                         
-                        <h2 class="about__subtitlea">
+                        <h3 class="about__subtitlea">
                             <span class="home__title-color">Yazılım Kısmı</span>
-                        </h2>
-                        <div class="meter orange nostripes" style="margin-top: -5px;">
+                        </h3>
+                        <div class="meter orange nostripes">
                             <span style="width: 80%"></span>
                         </div>
             
-                        <h2 class="about__subtitlea">
+                        <h3 class="about__subtitlea">
                             <span class="home__title-color">Tasarım Kısmı</span>
-                        </h2>
-                        <div class="meter orange nostripes" style="margin-top: -5px;">
+                        </h3>
+                        <div class="meter orange nostripes">
                             <span style="width: 90%"></span>
                         </div>
                     </div>
@@ -150,17 +133,17 @@
                         </h2>
                         <p class="about__text">Bu bot, özellikle Discord platformunda satış yapan kullanıcıların ihtiyaçlarını karşılamak üzere tasarlanmıştır. Sunduğu özellikler sayesinde satış süreçlerini optimize etmeyi ve kullanıcı deneyimini geliştirmeyi hedeflemektedir.</p>
                         
-                        <h2 class="about__subtitlea">
+                        <h3 class="about__subtitlea">
                             <span class="home__title-color">Yazılım Kısmı</span>
-                        </h2>
-                        <div class="meter orange nostripes" style="margin-top: -5px;">
+                        </h3>
+                        <div class="meter orange nostripes">
                             <span style="width: 20%"></span>
                         </div>
             
-                        <h2 class="about__subtitlea">
+                        <h3 class="about__subtitlea">
                             <span class="home__title-color">Tasarım Kısmı</span>
-                        </h2>
-                        <div class="meter orange nostripes" style="margin-top: -5px;">
+                        </h3>
+                        <div class="meter orange nostripes">
                             <span style="width: 100%"></span>
                         </div>
                     </div>
@@ -170,11 +153,7 @@
             
             <footer class="footer">
                 <p class="footer__title">Ferwle - RT Ticket Owner</p>
-                
             </footer>
-            <script src="https://unpkg.com/scrollreveal"></script>
             <script src="assets/js/main.js"></script>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5074579407359486"
-crossorigin="anonymous"></script> 
     </body>
 </html>

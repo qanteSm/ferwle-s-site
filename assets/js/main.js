@@ -1,55 +1,70 @@
 
-const showMenu = (toggleId, frwId) =>{
+// Menu toggle functionality
+const showMenu = (toggleId, frwId) => {
     const toggle = document.getElementById(toggleId),
-    frw = document.getElementById(frwId)
+          frw = document.getElementById(frwId);
 
     if(toggle && frw){
-        toggle.addEventListener('click', ()=>{
-            frw.classList.toggle('show')
-        })
+        toggle.addEventListener('click', () => {
+            frw.classList.toggle('show');
+        });
     }
-}
-showMenu('frw-toggle','frw-menu')
+};
+showMenu('frw-toggle','frw-menu');
 
-const frwLink = document.querySelectorAll('.frw__link')
+// Close menu when clicking on a link
+const frwLink = document.querySelectorAll('.frw__link');
 
 function linkAction(){
-    const frwMenu = document.getElementById('frw-menu')
-    
-    frwMenu.classList.remove('show')
+    const frwMenu = document.getElementById('frw-menu');
+    frwMenu.classList.remove('show');
 }
-frwLink.forEach(n => n.addEventListener('click', linkAction))
+frwLink.forEach(n => n.addEventListener('click', linkAction));
 
-const sections = document.querySelectorAll('section[id]')
+// Active link highlighting on scroll
+const sections = document.querySelectorAll('section[id]');
 
-  
 function scrollActive(){
-    const scrollY = window.pageYOffset
+    const scrollY = window.pageYOffset;
 
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop -50;
-        sectionId = current.getAttribute('id')
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        const sectionId = current.getAttribute('id');
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.frw__menu a[href*=' + sectionId + ']').classList.add('active')
-        }else{
-            document.querySelector('.frw__menu a[href*=' + sectionId + ']').classList.remove('active')
+            document.querySelector('.frw__menu a[href*=' + sectionId + ']').classList.add('active');
+        } else {
+            document.querySelector('.frw__menu a[href*=' + sectionId + ']').classList.remove('active');
         }
-    })
+    });
 }
-window.addEventListener('scroll', scrollActive)
+window.addEventListener('scroll', scrollActive);
 
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2000,
-    delay: 200,
-});
+// Simple animation on scroll (replacing ScrollReveal)
+function animateOnScroll() {
+    const elements = document.querySelectorAll('.about__container, .home__data, .section-title');
+    
+    elements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
+        
+        if (elementTop < window.innerHeight - elementVisible) {
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)';
+        }
+    });
+}
 
-sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
-sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 200}); 
-sr.reveal('.home__social-icon',{ interval: 100}); 
-sr.reveal('.home__social-icon',{ interval: 100}); 
-sr.reveal('.meter',{interval: 100});
-sr.reveal('.about__subtitlea',{interval: 100}); 
+// Initialize animations
+document.addEventListener('DOMContentLoaded', function() {
+    const elements = document.querySelectorAll('.about__container, .home__data, .section-title');
+    elements.forEach(element => {
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(20px)';
+        element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    });
+    
+    window.addEventListener('scroll', animateOnScroll);
+    animateOnScroll(); // Run on load
+}); 
